@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Todo List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container mt-5">
+
+        <div class="text-center mb-4 todo-header">
+            <h2>
+                <i class="fas fa-clipboard-check mr-2 text-primary"></i>
+                <i class="fa-solid fa-list mr-2 text-primary"></i>
+                <strong>Todo List</strong>
+            </h2>
+        </div>
+
+        <div class="form-section card">
+            <div class="form-group">
+                <label><strong>Task Title</strong></label>
+                <input type="text" class="form-control" id="taskTitle" placeholder="Enter task title">
+            </div>
+
+            <div class="form-group">
+                <label><strong>Priority</strong></label>
+                <select class="form-control" id="taskPriority">
+                    <option>High</option>
+                    <option selected>Medium</option>
+                    <option>Low</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label><strong>Deadline</strong></label>
+                <input type="date" class="form-control" id="taskDeadline">
+            </div>
+
+            <button class="btn btn-primary btn-block" id="addTaskBtn">
+                <i class="fas fa-plus"></i> Add Task
+            </button>
+        </div>
+
+        <div class="d-flex justify-content-between mb-3">
+            <select class="form-control w-25" id="statusFilter">
+                <option>Status</option>
+                <option>All</option>
+                <option>Overdue</option>
+                <option>Upcoming</option>
+            </select>
+
+            <select class="form-control w-25" id="priorityFilter">
+                <option>Priority</option>
+                <option>All</option>
+                <option>High</option>
+                <option>Medium</option>
+                <option>Low</option>
+            </select>
+        </div>
+
+        <ul class="list-group" id="taskList">
+
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
