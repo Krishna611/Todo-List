@@ -2,7 +2,9 @@ Objective:
 Build a full-featured To-Do List Manager where users can add, edit, delete, and mark tasks as complete. Each task should also have a priority level and a deadline date. Tasks should be stored in Local Storage and organized based on their status or urgency.
 ![image](https://github.com/user-attachments/assets/f63277b7-979a-4a6b-a2f5-3c2018cf634e)
 Requirements:
+
 🔹 Core Features:
+
 Add Task:
 
 
